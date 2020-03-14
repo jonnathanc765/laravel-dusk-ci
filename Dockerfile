@@ -163,7 +163,7 @@ ADD configs/supervisord.conf /etc/supervisor/supervisord.conf
 ADD configs/nginx-default-site /etc/nginx/sites-available/default 
 
 RUN composer global require hirak/prestissimo
-
+# Laravel envoy added
 RUN composer global require laravel/envoy
 
 RUN npm set progress=false
